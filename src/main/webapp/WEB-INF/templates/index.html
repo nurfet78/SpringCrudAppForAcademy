@@ -26,7 +26,7 @@
             <td th:text="${emp.age}"></td>
             <td>
                 <form th:action="@{/deleteUser(id=${emp.id})}" method="post">
-                    <button type="submit" class="btn btn-sm btn-danger" style="float: right">Удалить</button>
+                    <button type="submit" class="btn btn-danger" style="float: right">Удалить</button>
                 </form>
                 <a th:href="@{/showFormForUpdate(id=${emp.id})}"
                    class="btn btn-primary me-2" style="float: right">Редактировать</a>

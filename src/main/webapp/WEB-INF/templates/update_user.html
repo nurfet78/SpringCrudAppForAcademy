@@ -29,7 +29,7 @@
                 <div class="col-md-4">
                     <label for="val3" class="form-label">Возраст</label>
                     <input type="number" class="form-control" id="val3" th:classappend="${#fields.hasErrors('age')} ? 'is-invalid'"  th:field="*{age}"
-                           th:value="*{age}" placeholder="Введите возраст">
+                           th:value="*{age}" placeholder="Введите возраст" required>
                     <div th:if="${#fields.hasErrors('age')}" class="invalid-feedback" th:errors="*{age}"></div>
                 </div>
                 <div class="col-12">
